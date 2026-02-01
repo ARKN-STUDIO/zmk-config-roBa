@@ -26,6 +26,14 @@
     };
 };
 
+&right_encoder {
+    status = "disabled";
+};
+
+&sensors {
+    sensors = <&left_encoder>;
+};
+
 &trackball_listener {
     status = "okay";
     device = <&trackball>;
