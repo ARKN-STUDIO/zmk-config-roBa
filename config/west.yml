@@ -14,7 +14,7 @@ manifest:
 
     - name: prospector-zmk-module
       remote: prospector
-      revision: main
+      revision: v2.1.0
       path: modules/prospector-zmk-module
   self:
     path: config
