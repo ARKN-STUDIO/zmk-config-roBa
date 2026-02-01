@@ -19,17 +19,9 @@
             ;
 };
 
-/ {
-    zip_temp_layer: zip_temp_layer {
-        compatible = "zmk,input-processor-temp-layer";
-        #input-processor-cells = <2>;
-    };
-};
-
 &trackball_listener {
     status = "okay";
     device = <&trackball>;
-    input-processors = <&zip_temp_layer 4 700>;
 };
 
 &pinctrl {
