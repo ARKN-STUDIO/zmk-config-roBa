@@ -22,6 +22,24 @@
 &trackball_listener {
     status = "okay";
     device = <&trackball>;
+    input-processors = <&zip_temp_layer 4 700>;
+};
+
+/ {
+    zip_temp_layer: zip_temp_layer {
+        compatible = "zmk,input-processor-temp-layer";
+        #input-processor-cells = <2>;
+    };
+};
+
+&sensors {
+    sensors = <&left_encoder>;
+};
+
+&left_encoder {
+    status = "okay";
+    a-gpios = <&gpio0 30 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+    b-gpios = <&gpio0 31 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
 };
 
 &pinctrl {
