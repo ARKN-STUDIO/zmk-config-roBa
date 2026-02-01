@@ -19,23 +19,6 @@
             ;
 };
 
-/ {
-    zip_temp_layer: zip_temp_layer {
-        compatible = "zmk,input-processor-temp-layer";
-        #input-processor-cells = <2>;
-    };
-};
-
-&sensors {
-    sensors = <&left_encoder>;
-};
-
-&left_encoder {
-    status = "okay";
-    a-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-    b-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-};
-
 &trackball_listener {
     status = "okay";
     device = <&trackball>;
