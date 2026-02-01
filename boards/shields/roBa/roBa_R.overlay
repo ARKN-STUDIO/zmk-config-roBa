@@ -31,13 +31,14 @@
 };
 
 &left_encoder {
-    status = "disabled";
+    status = "okay";
+    a-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+    b-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
 };
 
 &trackball_listener {
     status = "okay";
     device = <&trackball>;
-    input-processors = <&zip_temp_layer 4 700>;
 };
 
 &pinctrl {
