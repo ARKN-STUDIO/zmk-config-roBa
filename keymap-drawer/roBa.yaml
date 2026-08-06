@@ -17,7 +17,7 @@ layers:
   - F
   - G
   - Sft+Gui+5
-  - '-'
+  - VOLUME UP
   - H
   - J
   - K
@@ -28,8 +28,8 @@ layers:
   - C
   - V
   - B
-  - ':'
-  - ;
+  - {t: MUTE, h: SCROLL}
+  - VOLUME DOWN
   - N
   - M
   - ','
