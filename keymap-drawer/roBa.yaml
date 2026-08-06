@@ -40,8 +40,8 @@ layers:
   - LEFT GUI
   - BACKSPACE
   - {t: SPACE, h: NUM_FUNC}
-  - {t: '&to_layer_0 TAB', h: ARROW}
-  - {t: '&to_layer_0 ESCAPE', h: SYMBOL}
+  - '&lt_to_layer_0 3 TAB'
+  - '&lt_to_layer_0 1 ESCAPE'
   - {t: ENTER, h: SYSTEM}
   - '`'
   SYMBOL:
@@ -85,7 +85,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   NUM_FUNC:
@@ -172,7 +172,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {type: held}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - END
