@@ -1,4 +1,4 @@
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 300
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 100
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
@@ -62,6 +62,7 @@
             label = "ENCODER_MSC_DOWN_UP";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+            tap-ms = <20>;
         };
         lt_to_layer_0: lt_to_layer_0 {
             compatible = "zmk,behavior-hold-tap";
