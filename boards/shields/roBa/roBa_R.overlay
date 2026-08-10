@@ -22,6 +22,16 @@
     };
 };
 
+&sensors {
+    sensors = <&left_encoder>;
+};
+
+&left_encoder {
+    status = "okay";
+    a-gpios = <&gpio0 30 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+    b-gpios = <&gpio0 31 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>;
+};
+
 &pinctrl {
     spi0_default: spi0_default {
         group1 {
